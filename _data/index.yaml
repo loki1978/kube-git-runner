@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  kube-actions:
+    - apiVersion: v2
+      appVersion: 0.1.0
+      created: "2020-08-27T00:28:23.290561-04:00"
+      description: A Helm chart for Kubernetes
+      digest: 21bf9fd5a7be007bbc4d774390998f345c6639a5bde9a8ed094cec3a41c60581
+      name: kube-git-runner
+      type: application
+      urls:
+        - https://loki1978.github.io/kube-git-runner/kube-git-runner-0.1.0.tgz
+      version: 0.1.0
+  generated: "2020-08-27T00:28:23.288347-04:00"

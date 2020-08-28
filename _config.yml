@@ -1,1 +1,9 @@
-theme: jekyll-theme-cayman
+title: Kube-GitRunner Helm Chart
+description:
+
+theme: jekyll-theme-minimal
+
+repository: loki1978/kube-gitrunner
+
+stablecharts:
+  - kube-gitrunner

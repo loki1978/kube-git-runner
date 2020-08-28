@@ -1,37 +1,38 @@
-## Welcome to GitHub Pages
+## See installation instructions for:
 
-You can use the [editor on GitHub](https://github.com/loki1978/kube-git-runner/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+- [kube-gitrunner](https://https://github.com/loki1978/kube-gitrunner)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Jump to:
+{% for chartmap in site.data.index.entries -%}
+- [Development Releases: {{ chartmap[0] }}](#development-releases-{{ chartmap[0] | slugify }})
+{% endfor %}
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Stable releases
 
-```markdown
-Syntax highlighted code block
+{% for chartmap in site.data.index.entries %}
+  {% if site.stablecharts contains chartmap[0] %}
+### {{ chartmap[0] }}
 
-# Header 1
-## Header 2
-### Header 3
+| Release | Date | Application version |
+|---------|------|---------------------|
+  {%- assign sortedcharts = chartmap[1] | sort: 'created' | reverse -%}
+    {%- for chart in sortedcharts -%}
+      {%- unless chart.version contains "-" %}
+| [{{ chart.name }}-{{ chart.version | remove_first: "v" }}]({{ chart.urls[0] }}) | {{ chart.created | date_to_rfc822 }} | {{ chart.appVersion }} |
+      {%- endunless -%}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+{% for chartmap in site.data.index.entries %}
+### Development releases: {{ chartmap[0] }}
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/loki1978/kube-git-runner/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+| Release | Date | Application version |
+|---------|------|---------------------|
+  {% assign sortedcharts = chartmap[1] | sort: 'created' | reverse -%}
+  {% for chart in sortedcharts -%}
+| [{{ chart.name }}-{{ chart.version | remove_first: "v" }}]({{ chart.urls[0] }}) | {{ chart.created | date_to_rfc822 }} | {{ chart.appVersion }} |
+  {% endfor %}
+{% endfor %}
