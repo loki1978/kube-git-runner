@@ -3,7 +3,7 @@ description:
 
 theme: jekyll-theme-minimal
 
-repository: loki1978/kube-gitrunner
+repository: loki1978/kube-git-runner
 
 stablecharts:
-  - kube-gitrunner
+  - kube-git-runner
