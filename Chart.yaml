@@ -1,0 +1,20 @@
+apiVersion: v2
+name: kube-git-runner
+version: 0.1.0
+appVersion: 0.1.0
+description: Git Self Hosted Runner to Execute GitHub Actions workflows.
+keywords:
+  - runner
+  - github
+  - actions
+home: https://github.com/
+sources:
+  - https://github.com/loki1978/helm-charts/kube-git-runner
+maintainers:
+  - name: Lokesh Reddy
+    email: lokeshreddy4u@gmail.com
+engine: gotpl
+icon: https://github.com/loki1978/kube-git-runner/git-actions-stack-220x234.png
+annotations:
+  category: github
+
