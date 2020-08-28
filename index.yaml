@@ -9,7 +9,7 @@ entries:
       description: Git Self Hosted Runner to Execute GitHub Actions workflows.
       digest: ca0032b5677b70e290f58cd367878735403d79b1c34d80d71e4ca745b0508ea2
       home: https://github.com/loki1978
-      icon: https://github.com/loki1978/kube-git-runner/git-actions-stack-220x234.png
+      icon: https://loki1978.github.io/kube-git-runner/git-actions-stack-220x234.png
       keywords:
         - runner
         - github
@@ -21,6 +21,6 @@ entries:
       sources:
         - https://github.com/loki1978/kube-git-runner
       urls:
-        - https://github.com/loki1978/kube-git-runner/kube-git-runner-0.1.0.tgz
+        - https://loki1978.github.io/kube-git-runner//kube-git-runner-0.1.0.tgz
       version: 0.1.0
 generated: "2020-08-27T20:23:15.802063-04:00"
