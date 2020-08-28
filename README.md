@@ -5,8 +5,8 @@
 ## TL;DR
 
 ```console
-$ helm repo add loki https://loki1978.github.io/
-$ helm install my-release kube-actions
+$ helm repo add loki https://loki1978.github.io/kube-git-runner
+$ helm install my-release loki/kube-git-runner
 ```
 
 ## Introduction
