@@ -1,6 +1,6 @@
 ## See installation instructions for:
 
-- [kube-gitrunner](https://https://github.com/loki1978/kube-gitrunner)
+- [kube-gitrunner](https://github.com/loki1978/kube-git-runner)
 
 Jump to:
 {% for chartmap in site.data.index.entries -%}

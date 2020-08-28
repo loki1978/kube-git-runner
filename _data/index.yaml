@@ -21,6 +21,6 @@ entries:
       sources:
         - https://github.com/loki1978/kube-git-runner
       urls:
-        - https://loki1978.github.io/kube-git-runner//kube-git-runner-0.1.0.tgz
+        - https://loki1978.github.io/kube-git-runner/kube-git-runner-0.1.0.tgz
       version: 0.1.0
 generated: "2020-08-27T20:23:15.802063-04:00"
