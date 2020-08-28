@@ -8,7 +8,7 @@ entries:
       created: "2020-08-27T20:23:15.805331-04:00"
       description: Git Self Hosted Runner to Execute GitHub Actions workflows.
       digest: ca0032b5677b70e290f58cd367878735403d79b1c34d80d71e4ca745b0508ea2
-      home: https://github.com/
+      home: https://github.com/loki1978
       icon: https://github.com/loki1978/kube-git-runner/git-actions-stack-220x234.png
       keywords:
         - runner
@@ -19,7 +19,7 @@ entries:
           name: Lokesh Reddy
       name: kube-git-runner
       sources:
-        - https://github.com/loki1978/helm-charts/kube-git-runner
+        - https://github.com/loki1978/kube-git-runner
       urls:
         - https://github.com/loki1978/kube-git-runner/kube-git-runner-0.1.0.tgz
       version: 0.1.0
